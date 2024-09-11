@@ -11,26 +11,34 @@
         <div class="wrapper">
             <div class="slider-wrapper">
                 <div class="slider">
-                    <div class="slide slide1">
-                        <img src="img/memeValve.jpg" alt="valve">
+                    <div class="slider-images">
+
+                        <input type="radio" id="radio1" name="sliders" value="1" checked />
+                        <input type="radio" id="radio2" name="sliders" value="2" />
+                        <input type="radio" id="radio3" name="sliders" value="3" />
+                        <input type="radio" id="radio4" name="sliders" value="4" />
+
+                        <div class="first slide">
+                            <img src="img/memeValve.jpg" alt="valve">
+                        </div>
+                        <div class="slide">
+                            <img src="img/memeForums.jpg" alt="forums">
+                        </div>
+                        <div class="slide">
+                            <img src="img/memeYes.jpg" alt="yes">
+                        </div>
+                        <div class="slide">
+                            <img src="img/memeSecrets.jpg" alt="secrets">
+                        </div>
                     </div>
-                    <!-- <div class="slide slide2">
-                        <img src="img/memeForums.jpg" alt="forums">
-                    </div>
-                    <div class="slide slide3">
-                        <img src="img/memeYes.jpg" alt="yes">
-                    </div>
-                    <div class="slide slide4">
-                        <img src="img/memeSecrets.jpg" alt="secrets">
-                    </div> -->
                 </div>
-                <div class="slider-navifation">
+                <div class="navigation">
                     <h3 class="slider_text">Some text</h3>
                     <div class="slider-radio">
-                        <input type="radio" id="slide1" name="sliders" value="1" checked />
-                        <input type="radio" id="slide2" name="sliders" value="2" />
-                        <input type="radio" id="slide3" name="sliders" value="3" />
-                        <input type="radio" id="slide4" name="sliders" value="4" />
+                        <label for="radio1" class="navigation-slider"></label>
+                        <label for="radio2" class="navigation-slider"></label>
+                        <label for="radio3" class="navigation-slider"></label>
+                        <label for="radio4" class="navigation-slider"></label>
                     </div>
                 </div>
             </div>
