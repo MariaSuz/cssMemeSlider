@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.html{
+    height: 100%;
+}  
+
+.main {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    width: 100%;
+    height: 100dvh;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 64em;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 1em;
+    max-width: 64em;
+    width: 100%;
+    border: 0.125em solid orange;
+    padding: 1.25em;
+    border-radius: 2.5em;
+    backdrop-filter: blur(20em);
+    margin: 1.25em;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.slider{
+    width: 31em;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider-images{
+    width: 400%;
+    display: flex;
+}
+
+.slider-images input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    transition: 2s;
+}
+
+.slider-radio{
+    display: flex;
+    width: 2em;
+    justify-content: center;
+}
+
+.navigation-slider{
+    border: 0.125em solid orange;
+    padding: 0.313em;
+    border-radius: 0.625em;
+    cursor: pointer;
+    transition: 1s;
+    margin-right: 0.625em;
+    background-color: #de6a23;
+}
+
+
+.navigation-slider:hover {
+    background-color: inherit;
+}
+
+#radio1:checked~.first{
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+input[type="radio"]:checked + label{
+    background-color: inherit;
+}
+
+.slider_text{
+    font-size: 1.3em;
+}
+
+
+.images{
+    object-fit: cover;
+}
+
+@media (max-width: 50em) {
+    .navigation{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1em;
+    }
+
+    .slider{
+        width: 28em;
+    }
+
+    .images{
+        border-radius: 1em;
+        max-width: 28.125em;
+    }
+
+}
