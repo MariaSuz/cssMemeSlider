@@ -81,10 +81,12 @@
     cursor: pointer;
     transition: 1s;
     margin-right: 0.625em;
+    background-color: #de6a23;
 }
 
-.navigation-slider{
-    margin-right: 0.625em;
+
+.navigation-slider:hover {
+    background-color: inherit;
 }
 
 #radio1:checked~.first{
@@ -103,6 +105,10 @@
     margin-left: -75%;
 }
 
+input[type="radio"]:checked + label{
+    background-color: inherit;
+}
+
 .slider_text{
     font-size: 1.3em;
 }
@@ -112,7 +118,7 @@
     object-fit: cover;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50em) {
     .navigation{
         display: flex;
         flex-direction: column-reverse;
@@ -129,4 +135,3 @@
     }
 
 }
-
